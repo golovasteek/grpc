@@ -32,7 +32,7 @@ def grpc_python_deps():
 
     native.bind(
         name = "python_headers",
-        actual = "@local_config_python//:python_headers",
+        actual = "@grpc_python_interpreter//:python_headers",
     )
 
     if "cython" not in native.existing_rules():
