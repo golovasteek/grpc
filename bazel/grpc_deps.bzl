@@ -354,7 +354,7 @@ def grpc_deps():
     if "upb" not in native.existing_rules():
         http_archive(
             name = "upb",
-            sha256 = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            sha256 = "2a3023950188a1b49ef02b125472d15bfe8c6a209dba2848c0c0a71e081dc9ac",
             strip_prefix = "upb-cc0539eb55cb7a45ee36752dea5c798f50bceb32",
             urls = [
                 "https://github.com/golovasteek/upb/archive/cc0539eb55cb7a45ee36752dea5c798f50bceb32.tar.gz",
