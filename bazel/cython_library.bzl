@@ -72,7 +72,6 @@ def pyx_library(name, deps = [], py_deps = [], srcs = [], **kwargs):
             name = shared_object_name,
             srcs = [stem + ".cpp"],
             deps = deps + ["@grpc_python_interpreter//:python_headers"],
-            defines = defines,
             linkshared = 1,
         )
         shared_objects.append(shared_object_name)
